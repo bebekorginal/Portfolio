@@ -1,0 +1,61 @@
+@font-face {
+    font-family: MyCustomComic;
+    src: url("fonts/PlaypenSans-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 800;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding-top: 72px;
+    background-color: #c4c4c4;
+    color: black;
+    font-family: MyCustomComic, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: black;
+    color: #c4c4c4;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.menu ul {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background-color: #c4c4c4;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    background-color: black;
+    color: white;
+}
+
+main {
+    align-items: center;
+}
