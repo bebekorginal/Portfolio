@@ -10,33 +10,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="menu">
-        <span class="brand">BebekOrginal</span>
-        <ul>
-            <li><a href="#o-mnie">O mnie</a></li>
-            <li><a href="#projekty">Projekty</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-    </nav>
+    <div class="site-shell">
+        <nav class="menu">
+            <span class="brand">BebekOrginal</span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-links">
+                Menu
+            </button>
+            <ul id="menu-links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section id="o-mnie">
-            <h2>O mnie</h2>
-            <p>Witaj w moim portfolio.</p>
-        </section>
+        <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>Lorem Ipsum</p>
+            </section>
 
-        <section id="projekty">
-            <h2>Projekty</h2>
-        </section>
+            <hr>
 
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-        </section>
-    </main>
+            <section id="projects">
+                <h2>Projects</h2>
+            </section>
 
-    <footer>
-        <p>&copy; BebekOrginal Portfolio</p>
-    </footer>
+            <hr>
+
+            <section id="contact">
+                <h2>Contact</h2>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; BebekOrginal</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

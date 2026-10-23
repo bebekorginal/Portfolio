@@ -5,26 +5,43 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding-top: 72px;
     background-color: #c4c4c4;
     color: black;
     font-family: MyCustomComic, sans-serif;
+    line-height: 1.6;
+}
+
+.site-shell {
+    width: min(90%, 1000px);
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .menu {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
     background-color: black;
+    border-radius: 8px 8px 0 0;
     color: #c4c4c4;
+}
+
+.menu.menu-stuck {
+    border-radius: 0;
 }
 
 .brand {
@@ -38,6 +55,23 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 8px 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background-color: #c4c4c4;
+    color: black;
+    cursor: pointer;
+    font: inherit;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+    background-color: black;
+    color: white;
 }
 
 .menu a {
@@ -57,5 +91,83 @@ body {
 }
 
 main {
-    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 8px 32px 32px;
+    text-align: center;
+}
+
+section {
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 8px;
+}
+
+section p {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 15px 32px;
+    background-color: black;
+    border-radius: 0 0 8px 8px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .site-shell {
+        width: calc(100% - 32px);
+        margin: 20px auto;
+    }
+
+    .menu {
+        padding: 14px 16px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 8px;
+        border-radius: 0 0 8px 8px;
+        background-color: black;
+    }
+
+    .menu.menu-open ul {
+        display: grid;
+        gap: 8px;
+    }
+
+    .menu li,
+    .menu a {
+        width: 100%;
+    }
+
+    main {
+        padding: 4px 16px 20px;
+    }
+
+    footer {
+        padding: 15px 16px;
+    }
 }
