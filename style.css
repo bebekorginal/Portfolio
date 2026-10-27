@@ -94,12 +94,40 @@ main {
     width: 100%;
     margin: 0;
     padding: 8px 32px 32px;
-    text-align: center;
 }
 
 section {
     padding: 24px 0;
     border-bottom: 1px solid #eee;
+}
+
+#about-me {
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+
+#projects {
+    float: right;
+    width: 60%;
+    text-align: center;
+}
+
+#about-me-image {
+    float: right;
+}
+
+#projects-image {
+    float: left;
+}
+
+.avatar {
+    width: 39.9%;
+}
+
+img {
+    width: 100%;
+    min-height: 100px;
 }
 
 section:last-child {
@@ -165,6 +193,15 @@ footer p {
 
     main {
         padding: 4px 16px 20px;
+    }
+
+    #about-me {
+        width: 100%;
+    }
+
+    #about-me-image {
+        float: right;
+        width: 100%;
     }
 
     footer {
