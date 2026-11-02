@@ -1,0 +1,30 @@
+[
+	{
+	"name": "Frosty Rampage",
+	"short description": "simple 2d hack and slash",
+	"technologies": "Godot Engine, Krita",
+	"img-link": "https://img.itch.zone/aW1nLzExMTczNzg2LnBuZw==/315x250%23c/pvrzey.png",
+	"page-link": "https://bebekxxx.itch.io/frosty-rampage"
+	},
+	{
+	"name": "Killer with Dices",
+	"short description": "2d puzzle game with RNG mechanics",
+	"technologies": "Godot Engine, Aseprite, public assets",
+	"img-link": "https://img.itch.zone/aW1nLzk0NzY5NzAucG5n/315x250%23c/B27VBj.png",
+	"page-link": "https://bebekxxx.itch.io/killer-with-dices"
+	},
+	{
+	"name": "Forever Looped",
+	"short description": "minimalistic arcade puzzle game",
+	"technologies": "Unity Engine, GIMP",
+	"img-link": "https://img.itch.zone/aW1nLzg2MjAwNjkucG5n/315x250%23c/6l49fZ.png",
+	"page-link": "https://bebekxxx.itch.io/forever-looped"
+	},
+	{
+	"name": "Ball Hunter",
+	"short description": "simple clicker game made in one day",
+	"technologies": "Godot Engine, GIMP",
+	"img-link": "https://img.itch.zone/aW1nLzE2NDg0NjMzLnBuZw==/315x250%23c/r8IQxL.png",
+	"page-link": "https://bebekxxx.itch.io/ball-hunter"
+	}
+]
